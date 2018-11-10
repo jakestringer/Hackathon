@@ -1,17 +1,18 @@
 function setup() {
-  pacX = 0;
-  pacY = 0;
+  pacX = 50;
+  pacY = 50;
 
   createCanvas(700, 700);
 }
 
 //This function draws the actual pac man sprite
 function draw() {
-  fill(255);
-  rect(0,0,690,690);
-  fill(255,255,0);
-  nostroke();
-  ellipse(pacX, pacY, 50, 50);
+  // fill(0);
+  // rect(0,0,690,690);
+  // rect(10,10,10,10);
+  fill(0);
+  ellipse(pacX, pacY, pacX+50, paxy+50);
+  ellipse(0,0,50,50);
 }
 
 function keyPressed() {
